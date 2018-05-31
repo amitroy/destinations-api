@@ -8,7 +8,11 @@
             }],
             "PUT": [{
                 "route": "/api/v1/destinations/updateDestination/:destinationID",
-                "description": "updates an existing destination"
+                "description": "updates an existing destination using destinationID"
+            },
+            {
+                "route": "/api/v1/destinations/updateDestination/:destinationName",
+                "description": "updates an existing destination using destinationName"
             }]
         }
     }
