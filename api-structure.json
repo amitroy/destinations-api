@@ -1,0 +1,57 @@
+{
+    "createdAt": "TIMESTAMP",
+    "createdBy": "STRING",
+    "modifiedAt": "TIMESTAMP",
+    "modifiedBy": "STRING",
+    "country": {
+        "name": "STRING",
+        "timezone": "STRING",
+        "currency": "STRING",
+        "language": "STRING",
+        "population": "STRING"
+    },
+    "region": "STRING",
+    "location": {
+        "lat": "STRING",
+        "long": "STRING"
+    },
+    "name": "STRING",
+    "bestTimeToVisit": {
+        "from": "DATETIME",
+        "to": "DATETIME"
+    },
+    "recommendedDuration": {
+        "days": "NUMBER",
+        "nights": "NUMBER"
+    },
+    "description": "STRING",
+    "averageTemperature": {
+        "celsius": "NUMBER",
+        "farenheit": "NUMBER"
+    },
+    "attractions": [{
+            "name": "STRING",
+            "description": "STRING",
+            "type": ["Religious", "Landscape", "Adventures", "Kids"]
+        },
+        {
+            "name": "STRING",
+            "description": "STRING",
+            "type": ["Religious", "Landscape", "Adventures", "Kids"]
+        }
+    ],
+    "spendingAverage": {
+        "dollars": "NUMBER"
+    },
+    "photos": [{
+            "url": "STRING",
+            "caption": "STRING",
+            "description": "STRING"
+        },
+        {
+            "url": "STRING",
+            "caption": "STRING",
+            "description": "STRING"
+        }
+    ]
+}

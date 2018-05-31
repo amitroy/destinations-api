@@ -1,0 +1,16 @@
+{
+    "name": "destinations-api",
+    "routes": {
+        "destination": {
+            "POST": [{
+                "route": "/api/v1/destinations/createDestination",
+                "description": "creates a new destination"
+            }],
+            "PUT": [{
+                "route": "/api/v1/destinations/updateDestination/:destinationID",
+                "description": "updates an existing destination"
+            }]
+        }
+    }
+
+}
