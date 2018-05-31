@@ -1,4 +1,5 @@
 {
+    "destinationID": "STRING",
     "createdAt": "TIMESTAMP",
     "createdBy": "STRING",
     "modifiedAt": "TIMESTAMP",
