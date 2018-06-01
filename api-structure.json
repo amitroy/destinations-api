@@ -4,13 +4,7 @@
     "createdBy": "STRING",
     "modifiedAt": "TIMESTAMP",
     "modifiedBy": "STRING",
-    "country": {
-        "name": "STRING",
-        "timezone": "STRING",
-        "currency": "STRING",
-        "language": "STRING",
-        "population": "STRING"
-    },
+    "country": "STRING",
     "region": "STRING",
     "location": {
         "lat": "STRING",
