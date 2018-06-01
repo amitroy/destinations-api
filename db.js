@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const config = require('./config');
 
+// Mongo DB connection
 mongoose.connect(config.dbUrl);
 mongoose.connection
     .once('open', () => {
