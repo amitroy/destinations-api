@@ -3,6 +3,7 @@ const config = require('./config');
 
 // Mongo DB connection
 mongoose.connect(config.dbUrl);
+mongoose.set('debug', false);
 mongoose.connection
     .once('open', () => {
         console.log('DB connection success');
@@ -10,3 +11,4 @@ mongoose.connection
     .on('error', (err) => {
         console.log(`Error occured ${err}`);
     });
+module.exports = mongoose;

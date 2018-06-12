@@ -1,11 +1,14 @@
 {
     "destinationID": "STRING",
+
+    "__LATER_START": "",
     "createdAt": "TIMESTAMP",
     "createdBy": "STRING",
-    "modifiedAt": "TIMESTAMP",
-    "modifiedBy": "STRING",
+    "updatedAt": "TIMESTAMP",
+    "updatedBy": "STRING",
+    "___LATER_END": "",
+
     "country": "STRING",
-    "region": "STRING",
     "location": {
         "lat": "STRING",
         "long": "STRING"
@@ -20,19 +23,15 @@
         "nights": "NUMBER"
     },
     "description": "STRING",
-    "averageTemperature": {
-        "celsius": "NUMBER",
-        "farenheit": "NUMBER"
-    },
     "attractions": [{
             "name": "STRING",
             "description": "STRING",
-            "type": ["Religious", "Landscape", "Adventures", "Kids"]
+            "category": ["Religious", "Landscape", "Adventures", "Kids"]
         },
         {
             "name": "STRING",
             "description": "STRING",
-            "type": ["Religious", "Landscape", "Adventures", "Kids"]
+            "category": ["Religious", "Landscape", "Adventures", "Kids"]
         }
     ],
     "spendingAverage": {
@@ -40,13 +39,11 @@
     },
     "photos": [{
             "url": "STRING",
-            "caption": "STRING",
-            "description": "STRING"
+            "caption": "STRING"
         },
         {
             "url": "STRING",
-            "caption": "STRING",
-            "description": "STRING"
+            "caption": "STRING"
         }
     ]
 }

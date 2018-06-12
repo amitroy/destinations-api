@@ -1,21 +1,17 @@
 {
     "name": "destination-api",
+
     "routes": {
         "destination": {
-            "POST": [
-                {
-                    "route": "/api/v1/destination",
-                    "description": "creates a new destination"
-                }
-            ],
-            "PUT": [
-                {
-                    "route": "/api/v1/destination/id/:destinationID",
-                    "description": "updates an existing destination using destinationID"
-                }
-            ],
-            "GET": [
-                {
+            "POST": [{
+                "route": "/api/v1/destination",
+                "description": "creates a new destination"
+            }],
+            "PUT": [{
+                "route": "/api/v1/destination/id/:destinationID",
+                "description": "updates an existing destination using destinationID"
+            }],
+            "GET": [{
                     "route": "/api/v1/destination/id/:destinationID",
                     "description": "display an existing destination using destinationID"
                 },
@@ -25,15 +21,13 @@
                 },
                 {
                     "route": "/api/v1/destination/country/:country",
-                    "description": "display an existing destination using country name"  
+                    "description": "display an existing destination using country name"
                 }
             ],
-            "DELETE": [
-                {
-                    "route": "/api/v1/destination/id/:destinationID",
-                    "description": "delete an existing destination using destinationID"
-                }
-            ]
+            "DELETE": [{
+                "route": "/api/v1/destination/id/:destinationID",
+                "description": "delete an existing destination using destinationID"
+            }]
         }
     }
 }

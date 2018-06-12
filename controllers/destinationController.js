@@ -1,3 +1,7 @@
+const initDB = require('../db'); // eslint-disable-line no-unused-vars
+const Destination = require('../models/destination');
+
+
 module.exports.get_destination_by_id = (req, res, next) => {
     res.send({
         message: 'UNIMPLEMENTED ENDPOINT/get_destination_by_id',
@@ -20,11 +24,20 @@ module.exports.get_destination_by_country = (req, res, next) => {
     next();
 };
 module.exports.post_destination = (req, res, next) => {
-    res.send({
-        message: 'UNIMPLEMENTED ENDPOINT/post_destination',
-        requestBody: req.body
+    const destination = new Destination(req.body);
+    destination.save((err, savedDestination) => {
+        if (err) {
+            next({
+                status: 'error',
+                outcome: err
+            });
+        } else {
+            res.send({
+                status: 'success',
+                outcome: savedDestination
+            });
+        }
     });
-    next();
 };
 module.exports.put_destination_by_id = (req, res, next) => {
     res.send({
