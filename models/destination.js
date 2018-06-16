@@ -3,8 +3,7 @@ const mongoose = require('mongoose');
 //
 // Schema
 //
-const Schema = mongoose.Schema;
-const Destination = new Schema({
+const Destination = new mongoose.Schema({
     createdBy: {
         type: String,
         required: true,
@@ -87,11 +86,14 @@ const Destination = new Schema({
 }, {
     toObject: {
         virtuals: true
-    }
+    },
+    timestamps: true,
+    versionKey: false,
+    id: false
 });
 
 Destination.virtual('destinationId').get(function getMongoId() {
-    return this.id;
+    return this._id; // eslint-disable-line no-underscore-dangle
 });
 
 module.exports = mongoose.model('destinations', Destination);

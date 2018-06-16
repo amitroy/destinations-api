@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const config = require('./config');
 
 // Mongo DB connection
+mongoose.Promise = global.Promise;
 mongoose.connect(config.dbUrl);
 mongoose.set('debug', false);
 mongoose.connection
