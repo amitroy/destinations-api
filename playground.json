@@ -1,0 +1,39 @@
+{
+    "createdBy": "Papun Paik",
+    "country": "Spain",
+    "location": {
+        "lat": "27.0360° N",
+        "long": "88.2627° E"
+    },
+    "name":"Ibiza",
+    "bestTimetoVisit": {
+        "from": "Apr",
+        "to":"Oct"
+    },
+    "recommendedDuration": {
+        "days": 5,
+        "nights": 0
+    },
+    "description": "Darjeeling is a town in India's West Bengal state, in the Himalayan foothills. Once a summer resort for the British Raj elite, it remains the terminus of the narrow-gauge Darjeeling Himalayan Railway, or “Toy Train,” completed in 1881. It's famed for the distinctive black tea grown on plantations that dot its surrounding slopes",
+    "attractions": [{
+        "name":"Padmaja Naidu Himalayan Zoological Park",
+        "description":"Padmaja Naidu Himalayan Zoological Park is a 67.56-acre zoo in the town of Darjeeling in the Indian state of West Bengal. The zoo was opened in 1958, and an average elevation of 7,000 feet, is the largest high altitude zoo in India.",
+        "category": "Adventures"
+    },
+    {
+        "name":"Tiger Hill",
+        "description":"Tiger Hill is located in Darjeeling, in the Indian State of West Bengal, and is the summit of Ghoom, the highest railway station in the Darjeeling Himalayan Railway – a UNESCO World Heritage Site",
+        "category": "Landscape"
+    }],
+    "spendingAverage": {
+        "dollars": 500
+    },
+    "photos": [{
+        "url": "https://farm4.staticflickr.com/3371/3324475854_19baba3b61_b_d.jpg",
+        "caption": "Kanchenjunga viewed from Tiger Hill at sunrise. It is the third highest mountain in the world and hangs over Darjeeling across the Sikkim Valley."
+    },
+    {
+        "url": "https://farm1.staticflickr.com/883/41579203442_d55dfe31fd_k_d.jpg",
+        "caption": "Darjeeling"
+    }]
+}

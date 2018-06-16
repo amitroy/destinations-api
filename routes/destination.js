@@ -14,9 +14,9 @@ const destinationController = require('../controllers/destinationController');
 //
 // GET
 //
-router.get('/id/:destinationID', destinationController.get_destination_by_id);
+router.get('/id/:destinationId', destinationController.get_destination_by_id);
 router.get('/name/:destinationName', destinationController.get_destination_by_name);
-router.get('/country/:country', destinationController.get_destination_by_country);
+router.get('/country/:destinationCountry', destinationController.get_destination_by_country);
 
 //
 // POST
@@ -26,11 +26,11 @@ router.post('/', destinationController.post_destination);
 //
 // PUT
 //
-router.put('/id/:destinationID', destinationController.put_destination_by_id);
+router.put('/id/:destinationId', destinationController.put_destination_by_id);
 
 //
 // DELETE
 //
-router.delete('/id/:destinationID', destinationController.delete_destination_by_id);
+router.delete('/id/:destinationId', destinationController.delete_destination_by_id);
 
 module.exports = router;

@@ -17,7 +17,7 @@ const Destination = new mongoose.Schema({
     },
     country: {
         type: String,
-        enum: ['India', 'United Kingdom', 'Australia', 'United States of America'],
+        enum: ['India', 'United Kingdom', 'Australia', 'United States of America', 'Spain'],
         required: true
     },
     location: {
